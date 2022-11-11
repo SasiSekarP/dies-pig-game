@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Pig Game</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="onesideBox currentPlayer" id="left">
+            <div class="top">
+                <div class="player" id="player1">PLAYER 1</div>
+                <div class="playerScore" id="player1Score">0</div>
+            </div>
+            <div class="resultCard" id="result1Card">
+                <div>CURRENT</div>
+                <div class="currentScore" id="current1Score">0</div>
+            </div>
+        </div>
+        <div class="mid">
+            <button class="btn" onclick="newGame()">NEW GAME</button>
+            <div class="dice hide" id="dice"><img src="./images/dice-1.png" alt=""></div>
+            <div class="bottomBtn hide" id="bottomBtn">
+            <button class="btn" onclick="rollDice()">ROLL DICE</button>
+                <button class="btn" onclick="hold()">HOLD</button>
+            </div>
+        </div>
+        <div class="onesideBox otherPlayer" id="right">
+            <div class="top">
+                <div class="player" id="player2">PLAYER 2</div>
+                <div class="playerScore" id="player2Score">0</div>
+            </div>
+            <div class="resultCard" id="result2Card">
+                <div>CURRENT</div>
+                <div class="currentScore" id="current2Score">0</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

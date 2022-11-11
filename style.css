@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior : smooth ;
+}
+
+img{
+    width : 100%;
+    height : auto;
+}
+
+/* boiler plate */
+
+body{
+    background-color: rgb(55, 40, 55);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.mid{
+    width: 0px;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+}
+
+.onesideBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.otherPlayer{
+    background-color: rgb(80, 85, 95);
+}
+
+.currentPlayer{
+    background-color: rgb(47, 79, 79);
+}
+
+.player{
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.playerScore{
+    color: orange;
+    font-size: 3rem;
+}
+
+.resultCard{
+    background-color: rgb(24, 42, 42);
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.top{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.currentScore{
+    padding-top: 1rem;
+    font-size: 40px;
+    width: 10rem;
+}
+
+.bottomBtn{
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.dice{
+    width: 10rem;
+    box-shadow: 5px 5px 20px black;
+}
+
+.btn{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    box-shadow: 5px 5px 20px black;
+    font-weight: 900;
+}
+
+.btn:hover{
+    transform:translateY(0.2rem); 
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.won{
+    
+    
+    background-image: url(https://acegif.com/wp-content/uploads/gif/confetti-2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(34, 37, 41);
+}
